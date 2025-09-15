@@ -6,13 +6,14 @@ public class HelloWorld {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Nhap so: ");
-		int a = scan.nextInt();
+		int age1 = scan.nextInt();
 		scan.nextLine();
 		System.out.println("Nhap ten: ");
-		String b = scan.nextLine();
+		String name = scan.nextLine();
 		System.out.println("Nhap so: ");
-		int c = scan.nextInt();
+		int age2 = scan.nextInt();
 
-		System.out.println("ten la: " + b + (" ,tuoi la :" + (a + c)));
+		System.out.println("ten la: " + name + (" ,tuoi la :" + (age1 + age2)));
+		scan.close();
 	}
 }
