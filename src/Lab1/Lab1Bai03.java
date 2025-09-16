@@ -1,4 +1,4 @@
-package talon;
+package Lab1;
 
 import java.util.Scanner;
 

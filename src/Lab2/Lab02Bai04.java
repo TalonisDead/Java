@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Lab02Bai04 {
 
 	public static void bai1() {
-		System.out.println("Lab 02 Bài 01");
+		System.out.println(">> LỰA CHỌN TÍNH NĂNG 1 <<");
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Nhập biến a = ");
@@ -13,6 +13,7 @@ public class Lab02Bai04 {
 		System.out.print("Nhập biến b = ");
 		int b = scanner.nextInt();
 		System.out.printf("Giải phương trình bậc nhất %dx + %d = 0 \n", a, b);
+
 		if (a == 0 && b == 0) {
 			System.out.println("Phương trình có vô số nghiệm");
 		} else if (a == 0 && b != 0) {
@@ -21,10 +22,12 @@ public class Lab02Bai04 {
 			float x = (float) -b / a;
 			System.out.println("x = " + x);
 		}
+
 		scanner.close();
 	}
 
 	public static void bai2() {
+		System.out.println(">> LỰA CHỌN TÍNH NĂNG 2 <<");
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Nhập số nguyên a: ");
@@ -47,11 +50,14 @@ public class Lab02Bai04 {
 			System.out.println("Phương trình có 2 nghiệm phân biệt:");
 			System.out.println("x1 = " + x1 + " ; x2 = " + x2);
 		}
+
 		scanner.close();
 	}
 
 	public static void bai3() {
+		System.out.println(">> LỰA CHỌN TÍNH NĂNG 3 <<");
 		Scanner scanner = new Scanner(System.in);
+
 		System.out.print("Nhập vào số điện: ");
 		int soDien = scanner.nextInt();
 		int money;
@@ -78,8 +84,9 @@ public class Lab02Bai04 {
 		System.out.println("| 4. Kết thúc              ");
 		System.out.println("++ ------------------ ++");
 		System.out.print("Lựa chọn tính năng: ");
-		int number = scanner.nextInt();
-		switch (number) {
+		int choose = scanner.nextInt();
+
+		switch (choose) {
 		case 1:
 			bai1();
 			break;
