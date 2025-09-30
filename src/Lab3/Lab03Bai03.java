@@ -23,5 +23,7 @@ public class Lab03Bai03 {
 		max = arr[n - 1];
 		System.out.println("Số nhỏ nhất trong mảng là: " + min);
 		System.out.println("Số nhỏ nhất trong mảng là: " + max);
+
+		scanner.close();
 	}
 }
